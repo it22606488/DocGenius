@@ -24,7 +24,8 @@ exports.getDocument = async (req, res) => {
     const document = await Document.findById(req.params.id);
     
     if (!document) {
-      return res.status(404).json({ message: 'Document not found' });
+      return res.status(404).json({ message: 'Document not found' });// error is loading
+      
     }
     
     // Track user activity
