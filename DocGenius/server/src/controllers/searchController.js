@@ -54,7 +54,7 @@ exports.searchDocuments = async (req, res) => {
       }
       
       // Handle sort options
-      const sortBy = req.query.sortBy || 'relevance';
+      const sortBy = req.query.sortBy || 'relevance'; //sortby
       filters.sortBy = sortBy;
       
     } else {
