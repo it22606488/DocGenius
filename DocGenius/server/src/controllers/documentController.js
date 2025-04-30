@@ -46,7 +46,7 @@ exports.getDocument = async (req, res) => {
   }
 };
 
-// Create a document with file upload
+// Create a document with file upload file
 exports.createDocument = async (req, res) => {
   try {
     console.log("Upload request received:", req.body);
