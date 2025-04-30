@@ -37,7 +37,7 @@ exports.getDocument = async (req, res) => {
     
     // Update view count
     document.viewCount += 1;
-    document.lastAccessed = Date.now();
+    document.lastAccessed  =  Date.now();
     await document.save();
     
     res.json(document);
