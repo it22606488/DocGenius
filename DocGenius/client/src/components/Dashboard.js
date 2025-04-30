@@ -102,7 +102,7 @@ const Dashboard = () => {
           recentActivity: statsResponse.data.recentActivity || 0
         });
         
-        // Fetch document suggestions
+        // Fetch document suggestion
         await fetchSuggestions();
         
         setLoading(false);
