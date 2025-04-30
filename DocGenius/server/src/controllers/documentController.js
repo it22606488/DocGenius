@@ -6,7 +6,7 @@ const fs = require('fs');
 const aiService = require('../services/aiService');
 const nlpService = require('../services/nlpService');
 
-// Get all documents
+// Get all the documents
 exports.getDocuments = async (req, res) => {
   try {
     const documents = await Document.find()
