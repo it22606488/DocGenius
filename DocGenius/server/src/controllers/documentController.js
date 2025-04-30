@@ -18,7 +18,8 @@ exports.getDocuments = async (req, res) => {
   }
 };
 
-// Get a single document
+// Get a single doc
+
 exports.getDocument = async (req, res) => {
   try {
     const document = await Document.findById(req.params.id);
