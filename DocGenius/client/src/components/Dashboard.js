@@ -116,7 +116,7 @@ const Dashboard = () => {
     fetchData();
   }, []);
 
-  // Function to create user avatar with initials
+  // Function to create user with initials
   const getUserInitials = (name) => {
     if (!name) return 'U';
     const nameParts = name.split(' ');
