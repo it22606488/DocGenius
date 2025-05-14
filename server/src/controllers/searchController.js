@@ -168,7 +168,6 @@ exports.getSearchSuggestions = async (req, res) => {
     const { query } = req.query;
     const userId = req.user.id;
     
-    // Get personalized search suggestions
     const suggestions = await require('../services/aiService')
       .getSearchSuggestions(query, userId);
     
