@@ -72,6 +72,7 @@ exports.searchDocuments = async (req, res) => {
       userId
     });
     
+    // Skip AI enhancement for now to simplify debugging
     // const enhancedQuery = await enhanceSearchQuery(searchQuery, userId);
     const enhancedQuery = searchQuery;
     
@@ -161,12 +162,13 @@ exports.searchDocuments = async (req, res) => {
   }
 };
 
-
+// Get search suggestions
 exports.getSearchSuggestions = async (req, res) => {
   try {
     const { query } = req.query;
     const userId = req.user.id;
     
+    // Get personalized search suggestions
     const suggestions = await require('../services/aiService')
       .getSearchSuggestions(query, userId);
     
