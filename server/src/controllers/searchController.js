@@ -162,7 +162,7 @@ exports.searchDocuments = async (req, res) => {
   }
 };
 
-// Get search suggestion
+
 exports.getSearchSuggestions = async (req, res) => {
   try {
     const { query } = req.query;
