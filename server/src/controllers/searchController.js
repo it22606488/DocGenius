@@ -123,7 +123,7 @@ exports.searchDocuments = async (req, res) => {
       sortOptions = { createdAt: -1 };
     }
     
-    // Apply user's sort preference
+
     if (filters.sortBy) {
       switch(filters.sortBy) {
         case 'newest':
