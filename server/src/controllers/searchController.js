@@ -112,7 +112,8 @@ exports.searchDocuments = async (req, res) => {
         $lte: new Date(filters.dateRange.end)
       };
     }
-   
+    
+    // Determine sort order
     let sortOptions = {};
     if (enhancedQuery && enhancedQuery.trim().length > 0) {
       // Text search relevance
@@ -122,7 +123,7 @@ exports.searchDocuments = async (req, res) => {
       sortOptions = { createdAt: -1 };
     }
     
-
+    // Apply user's sort preference
     if (filters.sortBy) {
       switch(filters.sortBy) {
         case 'newest':
