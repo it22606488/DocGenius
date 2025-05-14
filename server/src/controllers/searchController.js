@@ -72,7 +72,6 @@ exports.searchDocuments = async (req, res) => {
       userId
     });
     
-    // Skip AI enhancement for now to simplify debugging
     // const enhancedQuery = await enhanceSearchQuery(searchQuery, userId);
     const enhancedQuery = searchQuery;
     
