@@ -112,8 +112,7 @@ exports.searchDocuments = async (req, res) => {
         $lte: new Date(filters.dateRange.end)
       };
     }
-    
-    // Determine sort order
+   
     let sortOptions = {};
     if (enhancedQuery && enhancedQuery.trim().length > 0) {
       // Text search relevance
