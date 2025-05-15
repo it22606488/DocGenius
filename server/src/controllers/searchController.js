@@ -10,7 +10,7 @@ exports.searchDocuments = async (req, res) => {
     let filters = {};
     
     if (req.method === 'GET') {
-      // Extract from query parameters for GET requests
+ 
       searchQuery = req.query.q || '';
       
       // Extract filters from query parameters
@@ -32,7 +32,7 @@ exports.searchDocuments = async (req, res) => {
             const weekStart = new Date(today);
             weekStart.setDate(today.getDate() - today.getDay());
             filters.dateRange = {
-              start: weekStart,
+          
               end: now
             };
             break;
