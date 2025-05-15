@@ -1,0 +1,12 @@
+{
+  "name": "docgenius",
+  "version": "1.0.0",
+  "description": "DocFinde is a web-based file management system for storing, organizing, and sharing documents like PDFs, Word, and Excel. It offers version control, access management, and secure collaboration, making it ideal for personal and academic use.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
